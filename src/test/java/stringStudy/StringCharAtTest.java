@@ -19,7 +19,7 @@ public class StringCharAtTest {
 	@Test
 	void stringIndexOutBoundException() {
 		String testTarget = "3123123123";
-		Integer indexBound  = testTarget.length();
+		int indexBound  = testTarget.length();
 		StringCharAt stringCharAt = new StringCharAt(testTarget);
 
 		assertThatThrownBy(() -> stringCharAt.getByStringMethodCharAt(indexBound)).isInstanceOf(StringIndexOutOfBoundsException.class);
